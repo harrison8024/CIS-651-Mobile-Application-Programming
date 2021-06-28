@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/bebasneue_regular"
+            android:textSize="70dp"
+            android:textColor="@color/primaryColor"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This application is a Movie database. It is called NutFlix, this name is a play on word for NetFlix, but this is NOT NetFlix. Nut is also the logo of the application." />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Made by Harrison Chen"
+            android:fontFamily="@font/bebasneue_regular"
+            android:textSize="20dp"
+            android:textColor="@color/primaryColor"
+            android:gravity="bottom|center_horizontal"
+            android:layout_marginBottom="50dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

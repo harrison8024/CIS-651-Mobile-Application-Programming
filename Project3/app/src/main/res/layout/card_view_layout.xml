@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="2dp">
+    <ImageButton
+        android:id="@+id/option_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:src="@drawable/options_icon"
+        android:backgroundTint="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+        <ImageView
+            android:id="@+id/poster_photo"
+            android:src="@drawable/ic_nut_logo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/poster_photo"
+            android:text="Movie name"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_name"
+            android:layout_toEndOf="@id/poster_photo"
+            android:text="This is the description of the movie"
+            android:textSize="10dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

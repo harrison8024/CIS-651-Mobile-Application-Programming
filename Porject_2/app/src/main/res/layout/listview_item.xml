@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp">
+    <ImageView
+        android:id="@+id/list_img"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:src="@drawable/avatar"
+        android:layout_weight="0.5"/>
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Movie name"
+        android:layout_weight="0.5"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/next"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="NEXT ACTIVITY"/>
+    <Button
+        android:id="@+id/move_rotate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="MOVE AND ROTATE"/>
+    <Button
+        android:id="@+id/move_back"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="MOVE BACK"/>
+    <Button
+        android:id="@+id/fade_out"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="FADE OUT"/>
+    <Button
+        android:id="@+id/fade_in"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="FADE IN"/>
+    <Button
+        android:id="@+id/animator"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="XML ANIMATOR"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar"/>
+</LinearLayout>

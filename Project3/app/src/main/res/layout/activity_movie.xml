@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/movie_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        android:theme="@style/Widget.AppCompat.Light.ActionBar"/>
+    <ImageView
+        android:id="@+id/large_image"
+        android:layout_height="260dp"
+        android:layout_width="160dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/movie_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/title_text"
+        android:layout_margin="5dp"
+        android:src="@drawable/alice" />
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/movie_toolbar"
+        app:layout_constraintLeft_toRightOf="@id/large_image"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="movie name"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/year_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/title_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        android:text="2021"
+/>
+    <TextView
+        android:id="@+id/length_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/title_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/year_text"
+        android:text="120"
+/>
+    <TextView
+        android:id="@+id/director_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/title_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/length_text"
+        android:text="Director: Name"
+/>
+    <TextView
+        android:id="@+id/cast_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/title_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/director_text"
+        android:text="Cast: name"
+/>
+    <LinearLayout
+        android:id="@+id/rating_wrapper"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/large_image"
+        android:layout_marginLeft="5dp">
+        <RatingBar
+            android:id="@+id/movie_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="10"
+            android:stepSize="1"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rating_wrapper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="5dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Level"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_easy"
+
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/dark_yellow"/>
+    <Button
+        android:id="@+id/btn_easy"
+        android:text="Easy"
+        android:onClick="goEasy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtview"
+        app:layout_constraintBottom_toTopOf="@id/btn_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawableLeft="@drawable/superball"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintCircleRadius="20dp"
+        android:layout_marginHorizontal="20dp"
+        />
+    <Button
+        android:id="@+id/btn_medium"
+        android:text="Medium"
+        android:onClick="goMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_easy"
+        app:layout_constraintBottom_toTopOf="@id/btn_hard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawableLeft="@drawable/ultra_ball"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintCircleRadius="20dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/btn_hard"
+        android:text="Hard"
+        android:onClick="goHard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:drawableLeft="@drawable/mega_ball"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintCircleRadius="20dp"
+        android:layout_marginHorizontal="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

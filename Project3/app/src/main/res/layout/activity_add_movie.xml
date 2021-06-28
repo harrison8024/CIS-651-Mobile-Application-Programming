@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        android:elevation="4dp"
+        app:titleTextColor="@color/black"
+        android:theme="@style/Widget.AppCompat.ActionBar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/add_toolbar">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:id="@+id/previewImage"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/name_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Name"/>
+        <EditText
+            android:id="@+id/year_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year"/>
+        <EditText
+            android:id="@+id/length_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Length"/>
+        <EditText
+            android:id="@+id/director_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Director"/>
+        <EditText
+            android:id="@+id/cast_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Casts"/>
+        <EditText
+            android:id="@+id/rating_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating: 1~10"/>
+        <EditText
+            android:id="@+id/description_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Movie Description" />
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Movie"
+            android:onClick="AddMovie"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

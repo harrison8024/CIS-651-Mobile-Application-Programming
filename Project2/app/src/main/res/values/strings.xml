@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="ndopen">OPEN</string>
+    <string name="ndclose">CLOSE</string>
+</resources>
